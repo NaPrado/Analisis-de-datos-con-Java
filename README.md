@@ -4,4 +4,4 @@ Basándose en la consigna de este cuatrimestre del final de Programación Impera
 
 [Dejo adjunta la consiga del tp](https://docs.google.com/document/d/1FJQEpgz-SfFo9r5GgsGiFVnENPiqqJ279xLvjOTpMHY/edit)
 
-Tienes que ser del ITBA para poder verla, próximamente dejaré la idea aquí plasmada. 
+Tenes que ser del ITBA para poder verla, próximamente dejaré la idea aquí plasmada. 
