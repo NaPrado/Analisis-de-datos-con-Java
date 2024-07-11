@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc48bca-310e-41c7-a046-25be8a9af1f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Julio 2024.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Format.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PairPlatesTickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PairStrInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Querys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReadInfractions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReadTickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infractionsNYC.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfracionDiference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthMostPop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Format.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Querys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadTickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +56,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git_Repos\CSV_JAVA\Final Julio 2024" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,6 +96,8 @@
       <updated>1720559728492</updated>
       <workItem from="1720559729616" duration="8203000" />
       <workItem from="1720568816783" duration="10116000" />
+      <workItem from="1720579285880" duration="397000" />
+      <workItem from="1720654193968" duration="8486000" />
     </task>
     <servers />
   </component>
@@ -123,6 +122,14 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.OutOfMemoryError" package="java.lang" />
           <option name="timeStamp" value="15" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.time.format.DateTimeParseException" package="java.time.format" />
+          <option name="timeStamp" value="16" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="23" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

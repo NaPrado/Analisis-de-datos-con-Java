@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.time.Year;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -7,10 +8,12 @@ public class Main {
         Format format= Format.NY;
         ReadInfractions ri = new ReadInfractions(format,args[1]);
         ReadTickets rt = new ReadTickets(format,args[0],ri.getValues());
-        Querys q = new Querys(ri.getValues(),rt.getValues());
+        Queries q = new Queries(ri.getValues(),rt.getValues());
         q.query1();
         q.query2();
         q.query3();
+        q.query4();
+        q.query5();
         long endTime = System.nanoTime();
         long duration = endTime - startTime;
 
