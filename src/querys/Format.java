@@ -1,6 +1,18 @@
+package querys;
+
 public enum Format {
-    NY(0, 1,2,3,4,0,1),
-    CHI(1,0,2,4,3,1,0);
+    NY(0, 1,2,3,4,0,1){
+        @Override
+        public String getPaternDate() {
+            return "yyyy-MM-dd";
+        }
+    },
+    CHI(1,0,3,4,2,0,1){
+        @Override
+        public String getPaternDate() {
+            return "yyyy-MM-dd HH:mm:ss";
+        }
+    };
     private final int plate;
     private final int infractionId;
     private final int issuingAgency;
@@ -38,4 +50,5 @@ public enum Format {
     int getAmountField(){
         return amount;
     }
+    public abstract String getPaternDate();
 }

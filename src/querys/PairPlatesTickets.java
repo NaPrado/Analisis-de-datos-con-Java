@@ -1,4 +1,5 @@
-import java.util.Comparator;
+package querys;
+
 import java.util.Objects;
 
 public class PairPlatesTickets implements Comparable<PairPlatesTickets>{
@@ -9,14 +10,6 @@ public class PairPlatesTickets implements Comparable<PairPlatesTickets>{
     }
     public void increaseTicket(){
         ticket++;
-    }
-
-    public int getTicket() {
-        return ticket;
-    }
-
-    public String getPlate() {
-        return plate;
     }
 
     @Override

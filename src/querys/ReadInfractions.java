@@ -1,3 +1,5 @@
+package querys;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,7 +12,7 @@ import java.util.stream.Stream;
 public class ReadInfractions {
     Path pathInfractions;
     SortedMap<Integer, Infraction> infractions = new TreeMap<>();
-    ReadInfractions(Format format,String pathToGet) {
+    public ReadInfractions(Format format, String pathToGet) {
         pathInfractions = Paths.get(pathToGet);
         List<Infraction> infractionslist;
         try(Stream<String> stream = Files.lines(pathInfractions)){

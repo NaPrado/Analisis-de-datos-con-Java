@@ -1,3 +1,5 @@
+package querys;
+
 public class Infraction {
     int id;
     String description;

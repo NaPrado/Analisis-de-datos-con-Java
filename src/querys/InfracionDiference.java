@@ -1,3 +1,5 @@
+package querys;
+
 public class InfracionDiference implements Comparable<InfracionDiference>{
     private final String name;
     private final int min;

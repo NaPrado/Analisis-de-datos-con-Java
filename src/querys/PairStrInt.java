@@ -1,3 +1,5 @@
+package querys;
+
 import java.util.Objects;
 
 public class PairStrInt implements Comparable<PairStrInt> {

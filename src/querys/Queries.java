@@ -1,3 +1,5 @@
+package querys;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,11 +12,11 @@ import java.util.*;
 public class Queries {
     private final SortedMap<Integer, Infraction> infractions;
     private final List<Ticket> tickets;
-    Queries(SortedMap<Integer, Infraction> infractions, List<Ticket> tickets){
+    public Queries(SortedMap<Integer, Infraction> infractions, List<Ticket> tickets){
         this.infractions = infractions;
         this.tickets = tickets;
     }
-    void query1() throws IOException {
+    public void query1() throws IOException {
         for(Ticket ticket:tickets) {
             infractions.get(ticket.getId()).incrementAmount();
         }
@@ -26,7 +28,7 @@ public class Queries {
         Path outputPath = Paths.get("Query1.csv");
         Files.write(outputPath, linesToWrite);
     }
-    void query2() throws IOException {
+    public void query2() throws IOException {
         SortedMap<String, Map<Integer,PairStrInt>> queryMap = new TreeMap<>();
         for(Ticket ticket:tickets) {
             queryMap.putIfAbsent(ticket.getIssuingAgency(), new HashMap<>());
@@ -41,7 +43,7 @@ public class Queries {
         Path outputPath = Paths.get("Query2.csv");
         Files.write(outputPath, linesToWrite);
     }
-    void query3() throws IOException {
+    public void query3() throws IOException {
         SortedMap<String, Map<String, PairPlatesTickets>> queryMap = new TreeMap<>();
         for(Ticket ticket:tickets) {
             queryMap.putIfAbsent(infractions.get(ticket.getId()).description, new HashMap<>());
@@ -56,20 +58,20 @@ public class Queries {
         Path outputPath = Paths.get("Query3.csv");
         Files.write(outputPath, linesToWrite);
     }
-    void query4(Year min, Year max) throws IOException{
+    public void query4(Year min, Year max) throws IOException{
         query4(new Year[] {min, max});
     }
-    void query4(Year min) throws IOException{
+    public void query4(Year min) throws IOException{
         query4(new Year[] {min});
     }
-    void query4() throws IOException{
+    public void query4() throws IOException{
         query4(new Year[]{});
     }
     private void query4(Year[] args) throws IOException {
         if (args.length >2){
             return;
         }
-        SortedMap<Year,Map<Month,MonthMostPop>> queryMap = new TreeMap<>();
+        SortedMap<Year,Map<Month, MonthMostPop>> queryMap = new TreeMap<>();
         for(Ticket ticket:tickets) {
             if (args.length==0 || ( args.length==1 && (Year.of(ticket.getDate().getYear()).compareTo(args[0])>0) ) || ( args.length==2 && (Year.of(ticket.getDate().getYear()).compareTo(args[0])>0) && (Year.of(ticket.getDate().getYear()).compareTo(args[1])<=0)) ) {
                 queryMap.putIfAbsent(Year.of(ticket.getDate().getYear()), new HashMap<>());
@@ -84,8 +86,7 @@ public class Queries {
             Iterator<MonthMostPop> it= queryMap.get(year).values().stream().sorted().iterator();
             for (int i = 0; i < 3; i++) {
                 if (it.hasNext()) {
-                    MonthMostPop m=it.next();
-                    meses.append(";").append(m.getPop()).append("/").append(m);
+                    meses.append(";").append(it.next());
                 }
                 else {
                     meses.append(";").append("Empty");
@@ -96,16 +97,16 @@ public class Queries {
         Path outputPath = Paths.get("Query4.csv");
         Files.write(outputPath, linesToWrite);
     }
-    void query5(Year min, Year max) throws IOException{
+    public void query5(Year min, Year max) throws IOException{
         query5(new Year[] {min, max});
     }
-    void query5(Year min) throws IOException{
+    public void query5(Year min) throws IOException{
         query5(new Year[] {min});
     }
-    void query5() throws IOException{
+    public void query5() throws IOException{
         query5(new Year[]{});
     }
-    public void query5(Year[] args) throws IOException {
+    private void query5(Year[] args) throws IOException {
         if (args.length >2){
             return;
         }

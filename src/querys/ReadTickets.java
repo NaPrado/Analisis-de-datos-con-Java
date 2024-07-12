@@ -1,3 +1,5 @@
+package querys;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,7 +12,7 @@ import java.util.stream.Stream;
 public class ReadTickets {
     private Path pathTickets;
     private List<Ticket> ticketslist;
-    ReadTickets(Format format,String pathToGet,SortedMap<Integer,Infraction> infractionValues) throws IOException {
+    public ReadTickets(Format format, String pathToGet, SortedMap<Integer, Infraction> infractionValues) throws IOException {
         pathTickets = Paths.get(pathToGet);
         try(Stream<String> stream = Files.lines(pathTickets)){
             ticketslist = stream
@@ -26,7 +28,7 @@ public class ReadTickets {
                         int infractionId =Integer.parseInt(fields[format.getInfractionIdField()]);
                         String issuingAgency = fields[format.getIssuingAgencyField()];
                         String fechaString = fields[format.getDateField()];
-                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format.getPaternDate());
                         LocalDate date = LocalDate.parse(fechaString, formatter);
                         int amount = Integer.parseInt(fields[format.getAmountField()]);
                         if(infractionValues.containsKey(infractionId)){

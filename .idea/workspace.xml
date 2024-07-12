@@ -5,16 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc48bca-310e-41c7-a046-25be8a9af1f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infractionsNYC.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InfracionDiference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthMostPop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infractionsCHI.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AmountEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppMenuBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InfBorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QueryRadioButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuerysEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SupBorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketsCHI1000000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticketsCHI15000000.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Format.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Julio 2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Final Julio 2024.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/Format.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InfracionDiference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/InfracionDiference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/Infraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Querys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadTickets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonthMostPop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/MonthMostPop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PairPlatesTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/PairPlatesTickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PairStrInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/PairStrInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/Queries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadInfractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/ReadInfractions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/ReadTickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/querys/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +58,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Git_Repos\CSV_JAVA\Final Julio 2024" />
+      <recent name="D:\Git_Repos\CSV_JAVA\Final Julio 2024\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -73,6 +92,7 @@
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Final Julio 2024" />
       <option name="PROGRAM_PARAMETERS" value="ticketsNYC1000000.csv infractionsNYC.csv" />
+      <option name="VM_PARAMETERS" value="--module-path D:\JavaFX\javafx-sdk-21.0.2\lib --add-modules=javafx.swt,javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,7 +117,11 @@
       <workItem from="1720559729616" duration="8203000" />
       <workItem from="1720568816783" duration="10116000" />
       <workItem from="1720579285880" duration="397000" />
-      <workItem from="1720654193968" duration="8486000" />
+      <workItem from="1720654193968" duration="9614000" />
+      <workItem from="1720718273800" duration="9515000" />
+      <workItem from="1720727875819" duration="44000" />
+      <workItem from="1720727935765" duration="1471000" />
+      <workItem from="1720742500102" duration="1056000" />
     </task>
     <servers />
   </component>
