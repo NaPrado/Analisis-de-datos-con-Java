@@ -3,8 +3,9 @@
 Basándose en la consigna de este cuatrimestre del final de Programación Imperativa, tome la decisión de aprender a manejar archivos csv en java y de paso el uso de streams. Además implemente una pequeña interfaz graficá para que el analisis sea más practíco y comodo para el usuario. 
 
 [Dejo adjunta la consiga del tp](https://docs.google.com/document/d/1FJQEpgz-SfFo9r5GgsGiFVnENPiqqJ279xLvjOTpMHY/edit)
+[Dejo los archivos para descargar](https://drive.google.com/drive/folders/1qA3C5qVyNsPWFohMxiwXr6_-AmLsa0Qk)
 
-Tenes que ser del ITBA para poder verla, pero dejo un pequeño resumen de que tratan las querrys
+Tenes que ser del ITBA para poder verlos, pero dejo un pequeño resumen de que tratan las queries
 
 ### Query 1: Total de multas por infracción 
 Donde cada línea de la salida contenga, separados por “;” el nombre de la infracción y la cantidad total de multas con esa infracción.
